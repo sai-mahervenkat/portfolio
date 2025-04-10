@@ -34,6 +34,7 @@
 </header>
 
 <!-- MAIN CONTENT -->
+<!-- The .l-main uses a custom viewport height calculated via JS -->
 <main class="l-main bd-grid" id="home">
   <!-- HERO / HOME SECTION (Two‑Column Layout) -->
   <div class="hero-container">
@@ -55,7 +56,9 @@
     </div>
   </div>
 
-  <!-- SOCIAL LINKS (Positioned at Bottom Left) -->
+  <!-- SOCIAL LINKS -->
+  <!-- On desktop these will remain pinned at the bottom left;
+       on mobile they will be positioned statically and centered below the hero content. -->
   <div class="home__social">
     <a href="https://www.linkedin.com/in/srinivasa" target="_blank">
       <ion-icon name="logo-linkedin" class="home__social-icon"></ion-icon>

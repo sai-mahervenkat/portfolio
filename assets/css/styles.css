@@ -136,7 +136,9 @@ img {
     left: 0;
     background-image: linear-gradient(var(--black-color), var(--first-color));
     width: 100%;
-    height: 45%;
+    /* Let the menu content size itself; use max-height and scrolling if needed */
+    max-height: 80vh; /* or 100vh if you want full screen */
+    overflow-y: auto; /* Allow scrolling if the menu is taller than the viewport */
     padding: 1.5rem;
     border-radius: 0 0 1rem 1rem;
     transition: 0.5s;
@@ -257,6 +259,7 @@ img {
 }
 
 /* Social Links */
+/* Desktop: absolutely positioned at bottom left */
 .home__social {
   position: absolute;
   bottom: 1rem;
@@ -265,19 +268,19 @@ img {
   gap: 1rem;
 }
 
-.home__social-icon {
-  font-size: 1.4rem;
-  cursor: pointer;
-}
-
-/* Responsive adjustments */
+/* Mobile override: let social icons flow normally and center */
 @media screen and (max-width: 768px) {
   .hero-container {
     grid-template-columns: 1fr;
-    padding-top: 2rem; /* Reduced top padding for mobile */
+    padding-top: 2rem;
   }
   .hero-image {
     margin-top: 2rem;
+  }
+  .home__social {
+    position: static;
+    margin: 2rem auto 0 auto;
+    justify-content: center;
   }
 }
 
