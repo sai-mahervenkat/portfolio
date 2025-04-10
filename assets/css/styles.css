@@ -182,8 +182,9 @@ img {
 }
 
 /*===== HERO / HOME SECTION =====*/
+/* Use the computed --vh for mobile viewport height */
 .l-main {
-  min-height: 100vh;
+  min-height: calc(var(--vh, 1vh) * 100);
   padding-top: 3rem; /* Offset for fixed header */
   background: linear-gradient(135deg, #000000 0%, #2c2c2c 100%);
   position: relative;
@@ -273,7 +274,7 @@ img {
 @media screen and (max-width: 768px) {
   .hero-container {
     grid-template-columns: 1fr;
-    padding-top: 3rem; /* Reduced top padding for mobile */
+    padding-top: 2rem; /* Reduced top padding for mobile */
   }
   .hero-image {
     margin-top: 2rem;

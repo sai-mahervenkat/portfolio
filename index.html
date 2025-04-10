@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <!-- Ensure mobile browsers use proper viewport dimensions -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="assets/css/styles.css" />
   <title>Portfolio – Maher Venkata Sai Srinivas</title>
@@ -171,6 +172,15 @@
 <!-- SCRIPTS -->
 <!-- GSAP Library for Animations -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+<!-- JavaScript to adjust viewport height on mobile -->
+<script>
+  function setVh() {
+    const vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+  }
+  window.addEventListener('resize', setVh);
+  setVh();
+</script>
 <!-- Main JavaScript file -->
 <script src="assets/js/main.js"></script>
 <!-- Ionicons for Social & Menu Icons -->
