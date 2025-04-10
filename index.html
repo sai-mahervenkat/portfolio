@@ -1,184 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="assets/css/styles.css" />
-    <title>Portfolio – Maher Venkata Sai Srinivas</title>
-  </head>
-  <body>
-    <!-- OVERLAYS (For GSAP Animations) -->
-    <div class="overlay first"></div>
-    <div class="overlay second"></div>
-    <div class="overlay third"></div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <title>Portfolio – Maher Venkata Sai Srinivas</title>
+</head>
+<body>
+<!-- HEADER -->
+<header class="l-header">
+  <nav class="nav bd-grid">
+    <!-- LOGO / NAME -->
+    <div>
+      <a href="#" class="nav__logo">Sai's Portfolio</a>
+    </div>
+    <!-- NAVIGATION MENU -->
+    <div class="nav__menu" id="nav-menu">
+      <ul class="nav__list">
+        <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+        <li class="nav__item"><a href="#experience" class="nav__link">Experience</a></li>
+        <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+      </ul>
+    </div>
+    <!-- TOGGLE ICON FOR MOBILE MENU -->
+    <div class="nav__toggle" id="nav-toggle">
+      <ion-icon name="menu"></ion-icon>
+    </div>
+  </nav>
+</header>
 
-    <!-- HEADER -->
-    <header class="l-header">
-      <nav class="nav bd-grid">
-        <!-- LOGO / NAME -->
-        <div>
-          <a href="#" class="nav__logo">Sai's Portfolio</a>
-        </div>
-        <!-- NAVIGATION MENU -->
-        <div class="nav__menu" id="nav-menu">
-          <ul class="nav__list">
-            <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
-            <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-            <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-            <li class="nav__item"><a href="#experience" class="nav__link">Experience</a></li>
-            <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
-            <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-          </ul>
-        </div>
-        <!-- TOGGLE ICON FOR MOBILE MENU -->
-        <div class="nav__toggle" id="nav-toggle">
-          <ion-icon name="menu"></ion-icon>
-        </div>
-      </nav>
-    </header>
+<!-- MAIN CONTENT -->
+<main class="l-main bd-grid" id="home">
+  <!-- HERO / HOME SECTION (Two‑Column Layout) -->
+  <div class="hero-container">
+    <!-- LEFT: TEXT CONTENT -->
+    <div class="hero-text">
+      <span class="home__pressent anime-text">Hello, I'm</span>
+      <h1 class="home__title anime-text">Maher Venkata Sai Srinivas</h1>
+      <span class="home__skill anime-text">Senior Data Engineer</span>
+      <p class="home__description">
+        I specialize in building scalable data architectures, automating ETL pipelines, and optimizing performance for on‑prem and cloud environments. My focus is delivering measurable results that drive business value.
+      </p>
+      <a href="assets/files/resume.pdf" target="_blank" class="home__button anime-text">
+        DOWNLOAD CV
+      </a>
+    </div>
+    <!-- RIGHT: PROFILE IMAGE -->
+    <div class="hero-image">
+      <img src="assets/img/img.jpg" alt="Profile Image" />
+    </div>
+  </div>
 
-    <!-- MAIN CONTENT -->
-    <main class="l-main bd-grid" id="home">
-      <!-- HERO / HOME SECTION (Two‑Column Layout) -->
-      <div class="hero-container">
-        <!-- LEFT: TEXT CONTENT -->
-        <div class="hero-text">
-          <span class="home__pressent anime-text">Hello, I'm</span>
-          <h1 class="home__title anime-text">Maher Venkata Sai Srinivas</h1>
-          <span class="home__skill anime-text">Senior Data Engineer</span>
-          <p class="home__description">
-            I specialize in building scalable data architectures, automating ETL pipelines, and optimizing performance for on‑prem and cloud environments. My focus is delivering measurable results that drive business value.
-          </p>
-          <a href="assets/files/resume.pdf" target="_blank" class="home__button anime-text">
-            DOWNLOAD CV
-          </a>
-        </div>
-        <!-- RIGHT: PROFILE IMAGE -->
-        <div class="hero-image">
-          <img src="assets/img/img.jpg" alt="Profile Image" />
-        </div>
-      </div>
+  <!-- SOCIAL LINKS (Positioned at Bottom Left) -->
+  <div class="home__social">
+    <a href="https://www.linkedin.com/in/srinivasa" target="_blank">
+      <ion-icon name="logo-linkedin" class="home__social-icon"></ion-icon>
+    </a>
+    <a href="https://github.com/sai-mahervenkat" target="_blank">
+      <ion-icon name="logo-github" class="home__social-icon"></ion-icon>
+    </a>
+    <a href="mailto:mahervenkatasaisrinivas@gmail.com">
+      <ion-icon name="mail" class="home__social-icon"></ion-icon>
+    </a>
+  </div>
+</main>
 
-      <!-- SOCIAL LINKS (Positioned at Bottom Left) -->
-      <div class="home__social">
-        <a href="https://www.linkedin.com/in/srinivasa" target="_blank">
-          <ion-icon name="logo-linkedin" class="home__social-icon"></ion-icon>
-        </a>
-        <a href="https://github.com/sai-mahervenkat" target="_blank">
-          <ion-icon name="logo-github" class="home__social-icon"></ion-icon>
-        </a>
-        <a href="mailto:mahervenkatasaisrinivas@gmail.com">
-          <ion-icon name="mail" class="home__social-icon"></ion-icon>
-        </a>
-      </div>
-    </main>
+<!-- ABOUT SECTION -->
+<section class="bd-grid section" id="about">
+  <h2 class="section__title">About Me</h2>
+  <div class="section__content">
+    <p>
+      Results-driven Senior Data Engineer with over 4 years of experience designing and implementing scalable data pipelines, cloud-based analytics solutions, and high-performance ETL processes. Proficient in Python, SQL, Spark, and cloud platforms (AWS, Azure) with deep expertise in data warehousing, performance optimization, and machine learning integrations.
+    </p>
+  </div>
+</section>
 
-    <!-- ABOUT SECTION -->
-    <section class="bd-grid section" id="about">
-      <h2 class="section__title">About Me</h2>
-      <div class="section__content">
-        <p>
-          Results-driven Senior Data Engineer with over 4 years of experience designing and implementing scalable data pipelines, cloud-based analytics solutions, and high-performance ETL processes. Proficient in Python, SQL, Spark, and cloud platforms (AWS, Azure) with deep expertise in data warehousing, performance optimization, and machine learning integrations.
-        </p>
-      </div>
-    </section>
+<!-- SKILLS SECTION -->
+<section class="bd-grid section" id="skills">
+  <h2 class="section__title">Skills</h2>
+  <div class="section__content">
+    <ul>
+      <li><strong>Programming Languages:</strong> Python, SQL, Scala, Java</li>
+      <li><strong>Big Data & Processing:</strong> Apache Spark, Apache Kafka, AWS Glue, Apache Airflow</li>
+      <li><strong>Databases & Warehousing:</strong> PostgreSQL, MySQL, Snowflake, AWS Redshift, Delta Lake</li>
+      <li><strong>Cloud & DevOps:</strong> AWS (EC2, S3, Lambda, etc.), Docker, Kubernetes, Terraform</li>
+      <li><strong>ETL & Data Integration:</strong> Apache Airflow, Apache NiFi, DBT</li>
+      <li><strong>Visualization:</strong> Power BI, Tableau, MS Excel</li>
+      <li><strong>Data Governance & Security:</strong> GDPR, HIPAA, SOC 2, Encryption, Access Control</li>
+    </ul>
+  </div>
+</section>
 
-    <!-- SKILLS SECTION -->
-    <section class="bd-grid section" id="skills">
-      <h2 class="section__title">Skills</h2>
-      <div class="section__content">
-        <ul>
-          <li><strong>Programming Languages:</strong> Python, SQL, Scala, Java</li>
-          <li><strong>Big Data & Processing:</strong> Apache Spark, Apache Kafka, AWS Glue, Apache Airflow</li>
-          <li><strong>Databases & Warehousing:</strong> PostgreSQL, MySQL, Snowflake, AWS Redshift, Delta Lake</li>
-          <li><strong>Cloud & DevOps:</strong> AWS (EC2, S3, Lambda, etc.), Docker, Kubernetes, Terraform</li>
-          <li><strong>ETL & Data Integration:</strong> Apache Airflow, Apache NiFi, DBT</li>
-          <li><strong>Visualization:</strong> Power BI, Tableau, MS Excel</li>
-          <li><strong>Data Governance & Security:</strong> GDPR, HIPAA, SOC 2, Encryption, Access Control</li>
-        </ul>
-      </div>
-    </section>
+<!-- EXPERIENCE SECTION -->
+<section class="bd-grid section" id="experience">
+  <h2 class="section__title">Experience</h2>
+  <div class="section__content">
+    <!-- Experience Item 1 -->
+    <div class="experience__item">
+      <h3>FedEx – Senior Data Engineer</h3>
+      <span class="experience__duration">Jan 2023 – Present | USA</span>
+      <ul>
+        <li>Designed ETL pipelines for structured and unstructured data, improving processing efficiency by 40% and reducing latency by 30%.</li>
+        <li>Built scalable data architectures using Apache Spark, AWS Glue, and Kafka, reducing execution time by 30% and increasing throughput by 25%.</li>
+        <li>Migrated on-premise data warehouses to AWS Redshift and Snowflake, cutting operational costs by 30%.</li>
+        <li>Automated over 20 data pipelines with Apache Airflow, Kubernetes, and Terraform, reducing manual reporting by 60%.</li>
+        <li>Optimized complex SQL queries reducing execution time by 50%.</li>
+      </ul>
+    </div>
+    <!-- Experience Item 2 -->
+    <div class="experience__item">
+      <h3>Capgemini – Data Engineer</h3>
+      <span class="experience__duration">Jan 2020 – Mar 2022 | India</span>
+      <ul>
+        <li>Designed batch and real-time data pipelines with Apache Spark, Kafka, and AWS Glue, improving processing efficiency by 35%.</li>
+        <li>Developed high-performance data models in PostgreSQL, Redshift, and Snowflake, reducing query execution time by 40%.</li>
+        <li>Automated data pipeline orchestration with Apache Airflow and Prefect, reducing manual intervention by 60%.</li>
+        <li>Integrated cloud-based data storage solutions, improving query performance and cutting costs by 20%.</li>
+      </ul>
+    </div>
+  </div>
+</section>
 
-    <!-- EXPERIENCE SECTION -->
-    <section class="bd-grid section" id="experience">
-      <h2 class="section__title">Experience</h2>
-      <div class="section__content">
-        <!-- Experience Item 1 -->
-        <div class="experience__item">
-          <h3>FedEx – Senior Data Engineer</h3>
-          <span class="experience__duration">Jan 2023 – Present | USA</span>
-          <ul>
-            <li>Designed ETL pipelines for structured and unstructured data, improving processing efficiency by 40% and reducing latency by 30%.</li>
-            <li>Built scalable data architectures using Apache Spark, AWS Glue, and Kafka, reducing execution time by 30% and increasing throughput by 25%.</li>
-            <li>Migrated on-premise data warehouses to AWS Redshift and Snowflake, cutting operational costs by 30%.</li>
-            <li>Automated over 20 data pipelines with Apache Airflow, Kubernetes, and Terraform, reducing manual reporting by 60%.</li>
-            <li>Optimized complex SQL queries reducing execution time by 50%.</li>
-          </ul>
-        </div>
-        <!-- Experience Item 2 -->
-        <div class="experience__item">
-          <h3>Capgemini – Data Engineer</h3>
-          <span class="experience__duration">Jan 2020 – Mar 2022 | India</span>
-          <ul>
-            <li>Designed batch and real-time data pipelines with Apache Spark, Kafka, and AWS Glue, improving processing efficiency by 35%.</li>
-            <li>Developed high-performance data models in PostgreSQL, Redshift, and Snowflake, reducing query execution time by 40%.</li>
-            <li>Automated data pipeline orchestration with Apache Airflow and Prefect, reducing manual intervention by 60%.</li>
-            <li>Integrated cloud-based data storage solutions, improving query performance and cutting costs by 20%.</li>
-          </ul>
-        </div>
-      </div>
-    </section>
+<!-- PROJECTS SECTION -->
+<section class="bd-grid section" id="projects">
+  <h2 class="section__title">Projects</h2>
+  <div class="section__content">
+    <div class="project__item">
+      <h3>Optimizing Data Pipelines for E-Commerce Analytics</h3>
+      <ul>
+        <li>Built an ETL pipeline using Apache Spark and AWS Glue, processing 100M+ records daily.</li>
+        <li>Reduced data latency by 60% via real-time Kafka streaming.</li>
+        <li>Enhanced query performance with partitioning and indexing.</li>
+      </ul>
+    </div>
+    <div class="project__item">
+      <h3>Customer Segmentation for Personalized Marketing</h3>
+      <ul>
+        <li>Engineered data pipelines for segmentation analysis using Python and SQL.</li>
+        <li>Applied clustering techniques to group customers based on purchasing behavior.</li>
+        <li>Improved targeted marketing campaign effectiveness and ROI.</li>
+      </ul>
+    </div>
+    <div class="project__item">
+      <h3>IoT Sensor Data Processing for Smart Cities</h3>
+      <ul>
+        <li>Designed a real-time data processing framework for IoT sensor data using AWS Lambda.</li>
+        <li>Implemented time-series analytics and predictive maintenance for enhanced city services.</li>
+      </ul>
+    </div>
+  </div>
+</section>
 
-    <!-- PROJECTS SECTION -->
-    <section class="bd-grid section" id="projects">
-      <h2 class="section__title">Projects</h2>
-      <div class="section__content">
-        <div class="project__item">
-          <h3>Optimizing Data Pipelines for E-Commerce Analytics</h3>
-          <ul>
-            <li>Built an ETL pipeline using Apache Spark and AWS Glue, processing 100M+ records daily.</li>
-            <li>Reduced data latency by 60% via real-time Kafka streaming.</li>
-            <li>Enhanced query performance with partitioning and indexing.</li>
-          </ul>
-        </div>
-        <div class="project__item">
-          <h3>Customer Segmentation for Personalized Marketing</h3>
-          <ul>
-            <li>Engineered data pipelines for segmentation analysis using Python and SQL.</li>
-            <li>Applied clustering techniques to group customers based on purchasing behavior.</li>
-            <li>Improved targeted marketing campaign effectiveness and ROI.</li>
-          </ul>
-        </div>
-        <div class="project__item">
-          <h3>IoT Sensor Data Processing for Smart Cities</h3>
-          <ul>
-            <li>Designed a real-time data processing framework for IoT sensor data using AWS Lambda.</li>
-            <li>Implemented time-series analytics and predictive maintenance for enhanced city services.</li>
-          </ul>
-        </div>
-      </div>
-    </section>
+<!-- CONTACT SECTION -->
+<section class="bd-grid section" id="contact">
+  <h2 class="section__title">Contact</h2>
+  <div class="section__content contact__content">
+    <p>If you have any questions or opportunities, feel free to reach out!</p>
+    <p><strong>Email:</strong> <a href="mailto:mahervenkatasaisrinivas@gmail.com">mahervenkatasaisrinivas@gmail.com</a></p>
+    <p><strong>Phone:</strong> +1 (617)-545-5075</p>
+    <p>
+      <strong>LinkedIn:</strong>
+      <a href="https://www.linkedin.com/in/srinivasa" target="_blank">View Profile</a>
+    </p>
+  </div>
+</section>
 
-    <!-- CONTACT SECTION -->
-    <section class="bd-grid section" id="contact">
-      <h2 class="section__title">Contact</h2>
-      <div class="section__content contact__content">
-        <p>If you have any questions or opportunities, feel free to reach out!</p>
-        <p><strong>Email:</strong> <a href="mailto:mahervenkatasaisrinivas@gmail.com">mahervenkatasaisrinivas@gmail.com</a></p>
-        <p><strong>Phone:</strong> +1 (617)-545-5075</p>
-        <p>
-          <strong>LinkedIn:</strong>
-          <a href="https://www.linkedin.com/in/srinivasa" target="_blank">View Profile</a>
-        </p>
-      </div>
-    </section>
-
-    <!-- SCRIPTS -->
-    <!-- GSAP Library for Animations -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
-    <!-- Main JavaScript file -->
-    <script src="assets/js/main.js"></script>
-    <!-- Ionicons for Social & Menu Icons -->
-    <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
-  </body>
+<!-- SCRIPTS -->
+<!-- GSAP Library for Animations -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+<!-- Main JavaScript file -->
+<script src="assets/js/main.js"></script>
+<!-- Ionicons for Social & Menu Icons -->
+<script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
+</body>
 </html>

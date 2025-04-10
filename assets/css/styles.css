@@ -38,7 +38,7 @@
 }
 
 body {
-  margin: 3rem 0 0 0; /* Leave space for fixed header on mobile */
+  margin: 0;
   font-family: var(--body-font);
   background-color: var(--black-color);
   color: var(--white-color);
@@ -73,6 +73,7 @@ img {
   padding: 0 1rem;
 }
 
+/* Header & Navigation */
 .l-header {
   width: 100%;
   position: fixed;
@@ -83,7 +84,6 @@ img {
   padding: 0 1rem;
 }
 
-/*===== NAVIGATION =====*/
 .nav {
   height: 3rem;
   display: flex;
@@ -141,21 +141,17 @@ img {
     border-radius: 0 0 1rem 1rem;
     transition: 0.5s;
   }
-
   .nav__list {
     padding: 0;
   }
-
   .nav__item {
     margin-bottom: 2rem;
   }
-
   .nav__toggle {
     display: block;
   }
-
   .show {
-    top: 3rem; /* Display below header */
+    top: 3rem;
   }
 }
 
@@ -170,7 +166,6 @@ img {
     border-radius: 0;
     transition: none;
   }
-
   .nav__list {
     display: flex;
     justify-content: flex-end;
@@ -178,11 +173,9 @@ img {
     gap: 2rem;
     margin: 0;
   }
-
   .nav__item {
     margin: 0;
   }
-
   .nav__toggle {
     display: none;
   }
@@ -190,22 +183,21 @@ img {
 
 /*===== HERO / HOME SECTION =====*/
 .l-main {
-  height: calc(100vh - 3rem);
+  min-height: 100vh;
+  padding-top: 3rem; /* Offset for fixed header */
   background: linear-gradient(135deg, #000000 0%, #2c2c2c 100%);
   position: relative;
 }
 
-/* Two-Column Hero Container */
+/* Hero Container */
 .hero-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
   gap: 2rem;
-  min-height: calc(100vh - 3rem);
-  padding: 3rem 1rem 0 1rem; /* Padding to prevent content overlapping the fixed header */
+  padding: 3rem 1rem 0 1rem;
 }
 
-/* Left: Hero Text */
 .hero-text {
   color: var(--white-color);
   padding: 1rem;
@@ -249,7 +241,7 @@ img {
   background-image: linear-gradient(to right, var(--first-color), var(--black-color));
 }
 
-/* Right: Hero Image */
+/* Hero Image */
 .hero-image {
   display: flex;
   justify-content: center;
@@ -263,7 +255,7 @@ img {
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
 }
 
-/* Social Links (Positioned at Bottom Left) */
+/* Social Links */
 .home__social {
   position: absolute;
   bottom: 1rem;
@@ -281,9 +273,8 @@ img {
 @media screen and (max-width: 768px) {
   .hero-container {
     grid-template-columns: 1fr;
-    padding-top: 6rem;
+    padding-top: 3rem; /* Reduced top padding for mobile */
   }
-
   .hero-image {
     margin-top: 2rem;
   }
@@ -338,7 +329,6 @@ img {
 #contact .section__content {
   text-align: center;
 }
-
 
 /*===== OVERLAY ANIMATION ELEMENTS =====*/
 .overlay {
